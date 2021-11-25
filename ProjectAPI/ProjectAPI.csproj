@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mango_Services\Mango_Services.csproj" />
-    <ProjectReference Include="..\RepositoryServices\RepositoryServices.csproj" />
     <ProjectReference Include="..\Schmersal_Models\Schmersal_Models.csproj" />
   </ItemGroup>
 
