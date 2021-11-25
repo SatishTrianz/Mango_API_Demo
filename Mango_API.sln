@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAPI", "ProjectAPI\ProjectAPI.csproj", "{3B9D3188-9CC4-4CD9-9B69-3726DA588FC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectAPI", "ProjectAPI\ProjectAPI.csproj", "{3B9D3188-9CC4-4CD9-9B69-3726DA588FC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryServices", "RepositoryServices\RepositoryServices.csproj", "{7E1635E9-D3D3-4C9E-9E59-2EB695C35998}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schmersal_Models", "Schmersal_Models\Schmersal_Models.csproj", "{8CCD304A-EFAE-4025-AE1D-91FE0E10605E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schmersal_Models", "Schmersal_Models\Schmersal_Models.csproj", "{8CCD304A-EFAE-4025-AE1D-91FE0E10605E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mango_Services", "Mango_Services\Mango_Services.csproj", "{D1C1CEC8-8399-433A-9785-4A2E27CFF9CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango_Services", "Mango_Services\Mango_Services.csproj", "{D1C1CEC8-8399-433A-9785-4A2E27CFF9CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		{3B9D3188-9CC4-4CD9-9B69-3726DA588FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B9D3188-9CC4-4CD9-9B69-3726DA588FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B9D3188-9CC4-4CD9-9B69-3726DA588FC8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E1635E9-D3D3-4C9E-9E59-2EB695C35998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E1635E9-D3D3-4C9E-9E59-2EB695C35998}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E1635E9-D3D3-4C9E-9E59-2EB695C35998}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E1635E9-D3D3-4C9E-9E59-2EB695C35998}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8CCD304A-EFAE-4025-AE1D-91FE0E10605E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8CCD304A-EFAE-4025-AE1D-91FE0E10605E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CCD304A-EFAE-4025-AE1D-91FE0E10605E}.Release|Any CPU.ActiveCfg = Release|Any CPU
