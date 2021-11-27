@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Schmersal_Models.Sch_Entities;
 
 namespace Schmersal_Models.Migrations
 {
     [DbContext(typeof(Sch_Context))]
-    partial class Sch_ContextModelSnapshot : ModelSnapshot
+    [Migration("20211127015743_third")]
+    partial class third
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -200,7 +202,7 @@ namespace Schmersal_Models.Migrations
 
             modelBuilder.Entity("Schmersal_Models.Models.TblErpContact", b =>
                 {
-                    b.Property<string>("erp_contact_id")
+                    b.Property<string>("erp_eontact_id")
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("customer_id")
@@ -230,7 +232,7 @@ namespace Schmersal_Models.Migrations
                     b.Property<string>("title")
                         .HasColumnType("varchar(50)");
 
-                    b.HasKey("erp_contact_id");
+                    b.HasKey("erp_eontact_id");
 
                     b.ToTable("tblErpContact");
                 });
@@ -411,10 +413,10 @@ namespace Schmersal_Models.Migrations
 
             modelBuilder.Entity("Schmersal_Models.Models.TblProjectStaff", b =>
                 {
-                    b.Property<string>("id")
+                    b.Property<string>("Id")
                         .HasColumnType("varchar(80)");
 
-                    b.Property<string>("Userid")
+                    b.Property<string>("UserId")
                         .HasColumnType("varchar(80)");
 
                     b.Property<DateTimeOffset>("created_at")
@@ -429,12 +431,9 @@ namespace Schmersal_Models.Migrations
                     b.Property<string>("modified_by")
                         .HasColumnType("varchar(50)");
 
-                    b.Property<string>("user_id")
-                        .HasColumnType("varchar(80)");
+                    b.HasKey("Id");
 
-                    b.HasKey("id");
-
-                    b.HasIndex("Userid");
+                    b.HasIndex("UserId");
 
                     b.ToTable("tblProjectStaff");
                 });
@@ -658,7 +657,7 @@ namespace Schmersal_Models.Migrations
                 {
                     b.HasOne("Schmersal_Models.Models.TblUser", "User")
                         .WithMany("TblProjectStaffs")
-                        .HasForeignKey("Userid");
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });

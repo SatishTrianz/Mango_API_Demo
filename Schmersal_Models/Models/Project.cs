@@ -13,7 +13,7 @@ namespace Schmersal_Models.Models
         public string Id { get; set; }
 
         [Column(TypeName = "varchar(80)")]
-        public string Erp_Project_Id { get; set; }
+        public string Erp_Project_Id { get; set; } = null;
 
         [Column(TypeName = "varchar(80)")]
         public string Project_Name { get; set; }
@@ -40,6 +40,7 @@ namespace Schmersal_Models.Models
         public string Company_Id { get; set; }
 
         [Column(TypeName = "varchar(50)")]
+        [ForeignKey("Customer")]
         public string Customer_Id { get; set; }
 
         [Column(TypeName = "varchar(50)")]
@@ -56,5 +57,7 @@ namespace Schmersal_Models.Models
 
         [Column(TypeName = "varchar(50)")]
         public string Modified_By { get; set; }
+
+        public virtual Customer Customer { get; set; }
     }
 }

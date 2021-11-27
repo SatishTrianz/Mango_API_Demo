@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryServices.Services;
+using Schmersal_Models.ApiModels;
 using Schmersal_Models.Models;
 using System.Linq;
 using System.Threading.Tasks;
@@ -45,7 +46,7 @@ namespace ProjectAPI.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [Produces("application/json")]
         [HttpPost]
-        public async Task<IActionResult> CeateNewProject([FromBody] Project project)
+        public async Task<IActionResult> CeateNewProject([FromBody] ProjectApiModel project)
         {
             var result = await _repositoryService.CreateProject(project);
             if (result == false)
@@ -90,7 +91,7 @@ namespace ProjectAPI.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [Produces("application/json")]
         [HttpPut]
-        public async Task<IActionResult> Updateproject([FromBody] Project schProject)
+        public async Task<IActionResult> Updateproject([FromBody] TblProject schProject)
         {
             string message = string.Empty;
             var result = await _repositoryService.UpdateProject(schProject);
