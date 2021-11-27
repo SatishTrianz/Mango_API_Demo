@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mango_Services\Mango_Services.csproj" />
+    <ProjectReference Include="..\Schmersal_Models\Schmersal_Models.csproj" />
+  </ItemGroup>
+
+
+</Project>

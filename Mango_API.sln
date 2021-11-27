@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schmersal_Models", "Schmers
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mango_Services", "Mango_Services\Mango_Services.csproj", "{D1C1CEC8-8399-433A-9785-4A2E27CFF9CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfferStatusAPI", "OfferStatusAPI\OfferStatusAPI.csproj", "{B6073C6C-0FD2-474C-92B4-4306B831FF8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D1C1CEC8-8399-433A-9785-4A2E27CFF9CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C1CEC8-8399-433A-9785-4A2E27CFF9CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1C1CEC8-8399-433A-9785-4A2E27CFF9CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6073C6C-0FD2-474C-92B4-4306B831FF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6073C6C-0FD2-474C-92B4-4306B831FF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6073C6C-0FD2-474C-92B4-4306B831FF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6073C6C-0FD2-474C-92B4-4306B831FF8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
